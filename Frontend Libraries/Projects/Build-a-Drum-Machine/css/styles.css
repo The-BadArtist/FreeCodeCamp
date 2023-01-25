@@ -1,0 +1,36 @@
+:root {
+    display: block;  
+}
+
+body{
+    background-color: aqua;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#board {
+    background-color: rgb(35, 37, 38);
+    width: 80%;
+    height: 60%;
+    margin: auto;   
+}
+
+.drum-pad {
+    width: 30%;
+    margin: 0.2em;
+    aspect-ratio: 1 / 1;
+    border: 0.2em white solid;
+}
+
+#display-design{
+    aspect-ratio: 16/9;
+    box-shadow: inset 0 0 10px black;
+    border: 0.2em solid black;
+}
+
+#display{
+    font-size: 2em;
+}

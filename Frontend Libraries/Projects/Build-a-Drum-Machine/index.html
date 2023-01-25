@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+        <title>Drum Machine</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <script>
+            window.document.onkeydown = function(event) {
+                let drumSync = event.key.toUpperCase();
+                play(drumSync);
+            }
+            function play(str) {
+                let displayField = document.getElementById("display");
+                switch(str){
+                    case 'Q':
+                        displayField.innerHTML = "Heater 1";
+                    break;
+                    case 'W':
+                        displayField.innerHTML = "Heater 2";
+                    break;
+                    case 'E':
+                        displayField.innerHTML = "Heater 3";
+                    break;
+                    case 'A':
+                        displayField.innerHTML = "Heater 4";
+                    break;
+                    case 'S':
+                        displayField.innerHTML = "Clap";
+                    break;
+                    case 'D':
+                        displayField.innerHTML = "Open HH";
+                    break;
+                    case 'Z':
+                        displayField.innerHTML = "Kick n Hat";
+                    break;
+                    case 'X':
+                        displayField.innerHTML = "Kick";
+                    break;
+                    case 'C':
+                        displayField.innerHTML = "Closed HH";
+                    break;
+                    default:
+                        break;
+                }
+                let audio =  document.getElementById(str);
+                audio.play();
+            }
+        </script>
+    </head>
+    <body class="d-flex flex-column justify-content-center">
+        <div class="container text-center" id="drum-machine">
+            <div id="board" class="row align-items-center p-4 pt-5 rounded-2 top-50">
+                <div class="col-6">
+                    <div class="row">
+                        <button id="heater-1" class="btn btn-primary drum-pad drum-0 col" onclick="play('Q')" >Q
+                            <audio id="Q" src="./clip/Heater-1.mp3" class="clip"></audio>
+                        </button>
+                        <button id="heater-2" class="btn btn-primary drum-pad drum-1 col" onclick="play('W')">W
+                            <audio id="W" src="./clip/Heater-2.mp3" class="clip"></audio>
+                        </button>
+                        <button id="heater-3" class="btn btn-primary drum-pad drum-2 col" onclick="play('E')">E
+                            <audio id="E" src="./clip/Heater-3.mp3" class="clip"></audio>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button id="heater-4" class="btn btn-primary drum-pad drum-3 col" onclick="play('A')">A
+                            <audio id="A" src="./clip/Heater-4_1.mp3" class="clip"></audio>
+                        </button>
+                        <button id="clap" class="btn btn-primary drum-pad drum-4 col" onclick="play('S')">S
+                            <audio id="S" src="./clip/Heater-6.mp3" class="clip"></audio>
+                        </button>
+                        <button id="open-hh" class="btn btn-primary drum-pad drum 5 col" onclick="play('D')">D
+                            <audio id="D" src="./clip/Dsc_Oh.mp3" class="clip"></audio>
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button id="kick_n_hat" class="btn btn-primary drum-pad drum-6 col" onclick="play('Z')">Z
+                            <audio id="Z" src="./clip/Kick_n_Hat.mp3" class="clip"></audio>
+                        </button>
+                        <button id="kick" class="btn btn-primary drum-pad drum-7 col" onclick="play('X')">X
+                            <audio id="X" src="./clip/RP4_KICK_1.mp3" class="clip"></audio>
+                        </button>
+                        <button id="closed-hh" class="btn btn-primary drum-pad drum-8 col" onclick="play('C')">C
+                            <audio id="C" src="./clip/Cev_H2.mp3" class="clip"></audio>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="display-design" class="bg-white d-flex align-items-center justify-content-center rounded-2">
+                        <div id="display" class="text-center">BadArti$t Drum Machine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
