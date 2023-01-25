@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #333333;
+    --main-color2: #424242;
+    --accent-color: #452A80;
+    --accent-color2: #1C1133;
+    --accent-color3: #E8B338;
+    --text-color: #FCFAFF;
+    --text-color2: #A88228;
+
+}
+
+html {
+    font: 10px "Segoe UI", Arial, sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--main-color2);
+    padding: 50px 0;
+}
+
+main {
+    padding-top: 8.5vh;
+}
+
+
+/*Navigation*/
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 8.5%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    background-color: var(--accent-color);
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+}
+
+#navbar li {
+    display: inline-block;
+    background-clip: border-box;
+    padding: 10% 20px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+#navbar li:hover {
+    background-color: var(--accent-color3);
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+
+/*Start of Welcome Section*/
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--main-color2);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    font-size: 7rem;
+}
+
+#welcome-section p {
+    font-size: 3rem;
+    color: var(--text-color2);
+    font-weight: 450;
+}
+
+h1,
+h2,
+p {
+    text-shadow: 4px 4px 20px black;
+}
+
+
+/*End of Welcome Section*/
+
+/*Start of Project Section*/
+
+#projects {
+    background-color: var(--main-color);
+    padding: 40px;
+}
+
+#projects h2 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 500px;
+    place-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.project-grid a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.project-tile {
+    width: 400px;
+    height: 500px;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--accent-color2);
+    cursor: pointer;
+    border: solid white 3px;
+    box-shadow: 5px 5px 20px 1px black;
+    transition: all 300ms ease-in-out 62.5ms;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 7px 3px rgba(255, 255, 255, 0.2);
+}
+
+.project-tile img {
+    flex: 3;
+    width: 100%;
+    height: 300px;
+    border-radius: 1em;
+    object-fit: fill;
+    margin-top: 10px;
+}
+
+.project-img {
+    -webkit-box-shadow: inset 0px 0px 48px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 48px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 48px -2px rgba(0, 0, 0, 0.75);
+}
+
+.project-tile p {
+    flex: 1;
+    font-size: 2.1em;
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+
+.code {
+    opacity: 0;
+    font-size: 2.5rem;
+    transition: opacity 250ms ease;
+    color: var(--text-color2);
+}
+
+.project-tile:hover .code {
+    display: inline-block;
+    opacity: 1;
+}
+
+/*End of the project Section*/
+
+/*Start of the Contact Section*/
+#contact {
+    height: 100vh;
+}
+
+#contact h2 {
+    font-size: 3.5em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+#contact p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 800px;
+    min-width: 500px;
+    aspect-ratio: 4/3;
+    background-color: var(--main-color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 20px;
+}
+
+
+
+
+div {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.form-interact {
+    width: 90%;
+    height: 50px;
+    padding: 1.75em 1em;
+    border: 0;
+    background-color: #1e1e1e;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-interact::placeholder {
+    text-align: start;
+}
+
+.form-interact:hover {
+    background-color: #2d2d2d;
+}
+
+.form-interact:focus {
+    background-color: #131313;
+    border: solid black 1px;
+    color: var(--text-color);
+}
+
+.form-interact.message {
+    height: 225px !important;
+    resize: none;
+
+}
+
+
+
+.btn {
+    width: 10em;
+    height: 50px;
+    background-color: var(--accent-color3);
+    border: solid 2px #131313;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2em;
+    margin-top: 25px;
+    transition: all 250ms ease;
+    font-weight: bold;
+    position: relative;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: var(--text-color2);
+}
+
+
+
+.connect {
+    margin-top: 50px !important;
+    color: var(--text-color2);
+    font-size: 2.5em !important;
+    letter-spacing: 0.2em;
+}
+
+.social {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 2.5em;
+    text-align: center;
+    margin: 50px auto;
+    margin-top: 20px;
+    transition: all 200ms ease;
+}
+
+.social:hover {
+    transform: scale(1.1);
+    text-shadow: 4px 4px 8px black;
+}
+
+.social:active {
+    color: var(--accent-color);
+}
+
+/*End of the Contact Section*/
+
+
+footer {
+    bottom: 0;
+    text-align: center;
+}
+
+/***************CSS Media Queries*******************/
+@media (max-width: 1600px) {
+    .html {
+        font-size: 5px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1000px) {
+    .html {
+        font-size: 2.5px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}

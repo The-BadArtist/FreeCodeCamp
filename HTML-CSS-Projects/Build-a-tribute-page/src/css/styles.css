@@ -1,0 +1,71 @@
+html {
+    font-family: Roboto, Verdana, Sans-serif;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #DCDCDC;
+    border-radius: 0.5em;
+    padding: 15px;
+    text-align: center;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#main {
+    width: 80%;
+    margin: auto;
+    padding: 10px 5px;
+}
+
+main {
+    display: block;
+}
+
+
+h1,
+p,
+li {
+    color: #212121;
+}
+
+
+#img-div {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+figure {
+    display: block;
+
+}
+
+figcaption {
+    color: #8a8a8a
+}
+
+
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+li {
+    text-align: left;
+}
+
+
+blockquote {
+    padding: 15px 0;
+    color: #545454;
+    text-align: left;
+}

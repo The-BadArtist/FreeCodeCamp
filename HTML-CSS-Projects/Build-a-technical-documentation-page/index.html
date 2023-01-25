@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Java Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header class="navhead">Java Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Benefits_of_Java">Benefits of Java</a></li>
+            <li><a class="nav-link" href="#Getting_Started_with_Java">Getting Started with Java</a></li>
+            <li><a class="nav-link" href="#Compiling_and_Executing_Java_Code">Compiling and Executing Java Code</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Java_Variables">Java Variables</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Java_Arrays">Java Arrays</a></li>
+            <li><a class="nav-link" href="#Java_Operators">Java Operators</a></li>
+            <li><a class="nav-link" href="#Control_Flow_Statements">Control Flow Statements</a></li>
+            <li><a class="nav-link" href="#References">References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Java is a programming language and computing platform first released by Sun Microsystems in 1995. It
+                    has evolved from humble beginnings to power a large share of today’s digital world, by providing the
+                    reliable platform upon which many services and applications are built. New, innovative products and
+                    digital services designed for the future continue to rely on Java, as well.
+                </p>
+                <p>
+                    While most modern Java applications combine the Java runtime and application together, there are
+                    still many applications and even some websites that will not function unless you have a desktop Java
+                    installed. <a href="https://www.java.com/" target="_blank">Java.com</a> is intended for consumers
+                    who may still require Java for their desktop applications – specifically applications targeting Java
+                    8. Developers as well as users that would like to learn Java programming should visit the <a
+                        href="https://dev.java/" target="_blank">dev.java</a> website instead and business users should
+                    visit <a href="https://www.oracle.com/java/" target="_blank">oracle.com/java</a> for more
+                    information.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Benefits_of_Java">
+            <header>Benefits of Java</header>
+            <article>
+                <p>Why Use Java?</p>
+                <ul class="benefits">
+                    <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
+                    <li>It is one of the most popular programming language in the world</li>
+                    <li>It is easy to learn and simple to use</li>
+                    <li>It is open-source and free</li>
+                    <li>It is secure, fast and powerful</li>
+                    <li>It has a huge community support (tens of millions of developers)</li>
+                    <li>Java is an object oriented language which gives a clear structure to programs and allows code to
+                        be reused, lowering development costs</li>
+                    <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa
+                    </li>
+                </ul>
+                <p>It is not necessary to have any prior programming experience.
+                <p>
+            </article>
+        </section>
+        <section class="main-section" id="Getting_Started_with_Java">
+            <header>Getting Started with Java</header>
+            <article>
+                <p>To get started with java, follow the steps on <a
+                        href="https://www.w3schools.com/java/java_getstarted.asp" target="_blank">W3School</a> or on <a
+                        href="https://www.java.com/en/download/help/download_options.html" target="_blank">Java.com</a>
+                    to install Java to your computer.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Compiling_and_Executing_Java_Code">
+            <header>Compiling and Executing Java Code</header>
+            <article>
+                <p>After writing some Java code in a text editor, the code has to be transformed to another format,
+                    which will be executed by your computer. This transformation is conducted by a special piece od
+                    software called the compiler.</p>
+                <p>To keep things simple for this guide, we will be using an <a
+                        href="https://www.programiz.com/java-programming/online-compiler/" target="_blank">online Java
+                        compiler</a>.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <article>
+                <p>Java is an object-oriented language. So to begin writing cocde, your code must be held in a Java
+                    class</p>
+                <div class="codeIDE">
+                    <pre class="line-number">
+              <code>
+public class HelloWorld {
+  //Your code goes here
+}
+              </code>
+            </pre>
+                </div>
+                <p>The name of this Java class is HelloWorld. You need to save this text in a file named
+                    HelloWorld.java. A Java class must be saved in a file that has the same name as your class with the
+                    extension .java. This is mandatory and is in fact very convenient because you do not need to open a
+                    file to know what class is written in it.
+                </p>
+                <p>You can give this class any name as long as it does not start with a number. There is a convention
+                    though: the name of a Java class starts with a capital letter. This is not mandatory but all Java
+                    developers follow this convention. When you become a seasoned Java developer, seeing a class that
+                    does not follow this convention will look weird to you.
+                </p>
+                <p>The set of code that you will on the website is a code for printing <em>Hello, World!</em>. You also
+                    may see a long technical string but do not worry about that for now. If you want, within the
+                    quotations (""), you can change the text content to anything that is text, for example your name.
+                </p>
+                <div class="codeIDE">
+                    <pre class="line-number">
+              <code>
+public class HelloWorld {
+  public static void main(String[] args) {
+      System.out.println("[Type your name]");
+  }
+}
+              </code>
+            </pre>
+                </div>
+                <p>Run your code and your output should be whatever you typed within the quotations.</p>
+                <p><strong>Congratulations!</strong> You have written and executed your first Java program.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Java_Variables">
+            <header>Java Variables</header>
+            <article>
+                The Java programming language defines the following kinds of variables:
+                <ul class="varibles-list">
+                    <li><strong>Instance Variables (Non-Static Fields)</strong> Technically speaking, objects store
+                        their individual states in "non-static fields", that is, fields declared without the static
+                        keyword. Non-static fields are also known as instance variables because their values are unique
+                        to each instance of a class (to each object, in other words); the currentSpeed of one bicycle is
+                        independent from the currentSpeed of another.</li>
+                    <li><strong>Class Variables (Static Fields)</strong> A class variable is any field declared with the
+                        static modifier; this tells the compiler that there is exactly one copy of this variable in
+                        existence, regardless of how many times the class has been instantiated. A field defining the
+                        number of gears for a particular kind of bicycle could be marked as static since conceptually
+                        the same number of gears will apply to all instances. The code static int numGears = 6; would
+                        create such a static field. Additionally, the keyword final could be added to indicate that the
+                        number of gears will never change.</li>
+                    <li><strong>Local Variables</strong> Similar to how an object stores its state in fields, a method
+                        will often store its temporary state in local variables. The syntax for declaring a local
+                        variable is similar to declaring a field (for example, int count = 0;). There is no special
+                        keyword designating a variable as local; that determination comes entirely from the location in
+                        which the variable is declared — which is between the opening and closing braces of a method. As
+                        such, local variables are only visible to the methods in which they are declared; they are not
+                        accessible from the rest of the class.</li>
+                    <li><strong>Parameters</strong> You've already seen examples of parameters, both in the Bicycle
+                        class and in the main method of the "Hello World!" application. Recall that the signature for
+                        the main method is public static void main(String[] args). Here, the args variable is the
+                        parameter to this method. The important thing to remember is that parameters are always
+                        classified as "variables" not "fields". This applies to other parameter-accepting constructs as
+                        well (such as constructors and exception handlers) that you'll learn about later in the
+                        tutorial.</li>
+                </ul>
+                <p><strong>Naming Variables</strong> When it comes to nameing a varibale, like many other coding
+                    languages, there are rules and conventions for naming your varible:</p>
+                <ul>
+                    <li>Variable names are case-sensitive. It is good practice to not begin your varible name with "$"
+                        or the underscore character, "_".</li>
+                    <li>Subsequent characters may be letters, digits, dollar signs, or underscore characters.
+                        Conventions (and common sense) apply to this rule as well. When choosing a name for your
+                        variables, use full words instead of cryptic abbreviations, and make sure that it is not a
+                        keyword or reserved word. This is so that it would be easy to read when someone else or yourself
+                        have to come back to what have been coded.</li>
+                    <li>If the name you choose consists of only one word, spell that word in all lowercase letters. If
+                        it consists of more than one word, capitalize the first letter of each subsequent word. The
+                        names gearRatio and currentGear are prime examples of this convention. If your variable stores a
+                        constant value, such as static final int NUM_GEARS = 6, the convention changes slightly,
+                        capitalizing every letter and separating subsequent words with the underscore character. By
+                        convention, the underscore character is never used elsewhere.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                Although there are many types of variables, for simplicity, we will focus on the more common and
+                beginner friend data types.
+                <ul class="data-list">
+                    <li>
+                        <p><strong>String</strong> objects are immutable, which means that once created, their values
+                            cannot be changed. The String class is not technically a primitive data type, but
+                            considering the special support given to it by the language, you will probably tend to think
+                            of it as such.</p>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+                  <code>
+String example = "This is a String";
+                  </code>
+                  <pre>
+              </div>
+            </li>
+            <li>
+              <strong>int</strong>: By default, the int data type is a 32-bit signed two's complement integer, which has a minimum value of -231 and a maximum value of 231-1.
+              <div class="codeIDE">
+                <pre class="line-number">
+                  <code>
+int example = 1;
+                  </code>
+                  <pre>
+              </div>
+              </li>
+            <li>
+              <strong>double</strong>: The double data type is a double-precision 64-bit IEEE 754 floating point.For decimal values, this data type is generally the default choice. As mentioned above, this data type should never be used for precise values, such as currency.
+              <div class="codeIDE">
+                <pre class="line-number">
+                  <code>
+double example = 3.99;
+double example2 = 3.99d;
+                  </code>
+                  <pre>
+              </div>
+              </li>
+            <li>
+              <strong>boolean</strong>: The boolean data type has only two possible values: true and false. Use this data type for simple flags that track true/false conditions.
+              <div class="codeIDE">
+                <pre class="line-number">
+                  <code>
+//The only two values for boolean is true or false. Booleans can also be created through conditions using "<", ">", "<=" or ">=".
+boolean example = true; 
+                  </code>
+                  <pre>
+              </div>
+            </li>
+            <li>
+              <strong>char</strong>: The char data type is a single 16-bit Unicode character. It has a minimum value of \u0000 (or 0) and a maximum value of \uffff (or 65,535 inclusive).
+              <div class="codeIDE">
+                <pre class="line-number">
+                  <code>
+char capitalC = 'C';
+                  </code>
+                  <pre>
+              </div>
+              </li>
+            <li>
+              <strong>float</strong>: The float data type is a single-precision 32-bit IEEE 754 floating point. Use a float instead of double if you need to save memory in large arrays of floating point numbers. This data type should never be used for precise values, such as currency.
+              <div class="codeIDE">
+                <pre class="line-number">
+                  <code>
+float example = 5.84f;
+                  </code>
+                  <pre>
+              </div>
+              </li>
+              <p>Now lets practice using the varibales we learned about. Make an program that prints out your name, age, and makes use of a boolean(optional).</p>
+              <div class="codeIDE">
+                <pre class="line-number">
+                  <code>
+public class HelloWorld {
+  public static void main(String[] args) {
+    String name = "John Doe";
+    int age = 19;
+
+    System.out.println("Hi, my name is " + name + ". I am " + age + " years old.");
+
+    if(age > 18) { //Boolean Expression
+      System.out.println("I am not an adult.");
+    } else {
+      System.out.println("I am an adult");
+    }
+  }
+}
+                  </code>
+                  <pre>
+              </div>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Java_Arrays">
+        <header>Java Arrays</header>
+        <article>
+          <p>An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed.</p>
+          <p><img src="https://dev.java/assets/images/language-basics/01_array.png" alt="An array of 8 elements." width="60%" class= ".center"></p>
+          <p>Each item in an array is called an element, and each element is accessed by its numerical index. As shown in the preceding illustration, numbering begins with 0. The 6th element, for example, would therefore be accessed at index 5.</p>
+          <div class="codeIDE">
+            <pre class="line-number">
+              <code>
+  class ArrayDemo {
+    public static void main(String[] args) {
+        // declares an array of integers
+        int[] anArray;
+
+        // allocates memory for 10 integers
+        anArray = new int[10];
+           
+        // initialize first element
+        anArray[0] = 100;
+        // initialize second element
+        anArray[1] = 200;
+        // and so forth
+        anArray[2] = 300;
+        anArray[3] = 400;
+        anArray[4] = 500;
+        anArray[5] = 600;
+        anArray[6] = 700;
+        anArray[7] = 800;
+        anArray[8] = 900;
+        anArray[9] = 1000;
+
+        System.out.println(anArray[0]); //Output: 100
+        System.out.println(anArray[9]); //Output: 1000;
+              </code>
+            </pre>
+                        </div>
+                        <p>You can use an array for many of the varible types within Java, for the sake of simplicity
+                            within the guide, you can learn more about arrays through the <a href="">resources</a>.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Java_Operators">
+            <header>Java Operators</header>
+            <article>
+                <p>Java divides the operators into the following groups:</p>
+                <ul>
+                    <li>Arithmetic operators</li>
+                    <li>Assignment operators</li>
+                    <li>Comparison operators</li>
+                    <li>Logical operators</li>
+                    <li>Bitwise operators</li>
+                </ul>
+                <p>In this guide, we will discuss Java arithmetic, arithmetic shorthand, comparison, and logical
+                    operators.</p>
+                <h2 class="subhead"> Java Arithmetic Operators</h2>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>+</td>
+                                <td>Addition</td>
+                                <td>Adds values together</td>
+                                <td>x + y</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Subtraction</td>
+                                <td>Subtracts one value from another</td>
+                                <td>x - y</td>
+                            </tr>
+                            <tr>
+                                <td>*</td>
+                                <td>Multiplication</td>
+                                <td>Multiplies values</td>
+                                <td>x * y</td>
+                            </tr>
+                            <tr>
+                                <td>/</td>
+                                <td>Division</td>
+                                <td>Divides one value by another</td>
+                                <td>x / y</td>
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Modulus</td>
+                                <td>Returns the division remainder</td>
+                                <td>x % y</td>
+                            </tr>
+                            <tr>
+                                <td>++</td>
+                                <td>Increment</td>
+                                <td>Increases the value of a variable by 1</td>
+                                <td>++x</td>
+                            </tr>
+                            <tr>
+                                <td>--</td>
+                                <td>Decrement</td>
+                                <td>Decreases the value of a variable by 1</td>
+                                <td>--x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="subhead">Assignment Opertor Shorthand</h2>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Example</th>
+                                <th>Same As</th>
+                            </tr>
+                            <tr>
+                                <td>=</td>
+                                <td>x = 5</td>
+                                <td>x = 5</td>
+                            </tr>
+                            <tr>
+                                <td>+=</td>
+                                <td>x += 3</td>
+                                <td>x = x + 3</td>
+                            </tr>
+                            <tr>
+                                <td>-=</td>
+                                <td>x -= 3</td>
+                                <td>x = x - 3</td>
+                            </tr>
+                            <tr>
+                                <td>*=</td>
+                                <td>x *= 3</td>
+                                <td>x = x * 3</td>
+                            </tr>
+                            <tr>
+                                <td>/=</td>
+                                <td>x /= 3</td>
+                                <td>x = x / 3</td>
+                            </tr>
+                            <tr>
+                                <td>%=</td>
+                                <td>x %= 3</td>
+                                <td>x = x % 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="subhead">Java Comparison Operators</h2>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Name</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>==</td>
+                                <td>Equal to</td>
+                                <td>x == y</td>
+                            </tr>
+                            <tr>
+                                <td>!=</td>
+                                <td>Not equal</td>
+                                <td>x != y</td>
+                            </tr>
+                            <tr>
+                                <td>></td>
+                                <td>Greater than</td>
+                                <td>x > y</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    << /td>
+                                <td>Less than</td>
+                                <td>x < y</td>
+                            </tr>
+                            <tr>
+                                <td>>=</td>
+                                <td>Greater than or equal to</td>
+                                <td>x >= y</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <=< /td>
+                                <td>Less than or equal to</td>
+                                <td>x <= y</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="subhead">Java Logical Operators</h2>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Operator</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>&&</td>
+                                <td>Logical and</td>
+                                <td>Returns true if both statements are true</td>
+                                <td>x < 5 && x < 10</td>
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>Logical or</td>
+                                <td>Returns true if one of the statements is true</td>
+                                <td>x < 5 || x < 4</td>
+                            </tr>
+                            <tr>
+                                <td>!</td>
+                                <td>Logical not</td>
+                                <td>Reverse the result, returns false if the result is true</td>
+                                <td>!(x < 5 && x < 10)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="Control_Flow_Statements">
+            <header>Control Flow Statements</header>
+            <article>
+                <h2 class="subhead">The If-Then Statement</h2>
+                <p>The if-then statement is the most basic of all the control flow statements. It tells your program to
+                    execute a certain section of code only if a particular test evaluates to true. For example, the
+                    Bicycle class could allow the brakes to decrease the bicycle's speed only if the bicycle is already
+                    in motion. One possible implementation of the applyBrakes() method could be as follows:</p>
+                <div class="codeIDE">
+                    <pre class="line-number">
+              <code>
+if (condition) {
+  // block of code to be executed if the condition is true
+}
+              </code>
+            </pre>
+                </div>
+                <div class="codeIDE">
+                    <pre class="line-number">
+              <code>
+if (20 > 18) {
+  System.out.println("20 is greater than 18");
+}
+                </code>
+            </pre>
+                </div>
+                <p>If this test evaluates to false (meaning that the bicycle is not in motion), control jumps to the end
+                    of the if-then statement.</p>
+                <h2 class="subhead">The If-Then-Else Statement</h2>
+                <p>The if-then-else statement provides a secondary path of execution when an "if" clause evaluates to
+                    false.</p>
+                <div class="codeIDE">
+                    <pre class="line-number">
+              <code>
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+                </code>
+              </pre>
+                    <div>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+int time = 20;
+if (time < 18) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+// Outputs "Good evening."
+              </code>
+            </pre>
+                        </div>
+                        <h2 class="subhead">The else if Statement</h2>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+              </code>
+            </pre>
+                        </div>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+int time = 22;
+if (time < 10) {
+  System.out.println("Good morning.");
+} else if (time < 20) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+// Outputs "Good evening."
+              </code>
+            </pre>
+                        </div>
+                        <h2 class="subhead">The Switch Statement</h2>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+              </code>
+            </pre>
+                        </div>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+int day = 4;
+switch (day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  case 5:
+    System.out.println("Friday");
+    break;
+  case 6:
+    System.out.println("Saturday");
+    break;
+  case 7:
+    System.out.println("Sunday");
+    break;
+}
+// Outputs "Thursday" (day 4)
+              </code>
+            </pre>
+                        </div>
+                        <h2 class="subhead">The While Loop</h2>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+while (condition) {
+  // code block to be executed
+}
+              </code>
+            </pre>
+                        </div>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+int i = 0;
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+              </code>
+            </pre>
+                        </div>
+                        <h2 class="subhead">The Do/While Loop</h2>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+do {
+  // code block to be executed
+}
+while (condition);
+              </code>
+            </pre>
+                        </div>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+int i = 0;
+do {
+  System.out.println(i);
+  i++;
+}
+while (i < 5);
+              </code>
+            </pre>
+                        </div>
+                        <h2 class="subhead">The For Loop</h2>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+              </code>
+            </pre>
+                        </div>
+                        <div class="codeIDE">
+                            <pre class="line-number">
+              <code>
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+              </code>
+            </pre>
+                        </div>
+            </article>
+        </section>
+        <section class="main-section" id="References">
+            <header>References</header>
+            <article>
+                <p>If you want to learn more about Java and the references for this guide, check out the following
+                    websites:</p>
+                <ul>
+                    <li><a href="https://dev.java/">Dev.Java</a></li>
+                    <li><a href="https://www.w3schools.com/java/default.asp">W3Schools</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
