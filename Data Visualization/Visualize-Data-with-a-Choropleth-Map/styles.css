@@ -1,0 +1,90 @@
+*{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: rgb(3, 28, 188);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 40px;
+}
+
+#title{
+    font-size: 4em;
+}
+
+#description{
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+svg[id="canvas"], .legendndata {
+    border: 2px solid;
+    box-shadow: 5px 5px 20px black;
+}
+
+svg[id="canvas"]{
+    padding: 20px;
+    background-color: rgba(2, 2, 79, 0.877);
+    border-radius: 2em;
+}
+
+svg[id="legend"]{
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+
+#canvas {
+    position: relative;
+    min-width: 1000px;
+    min-height: 600px;
+}
+
+.legendndata{
+    padding: 10px;
+    background-color: rgba(2, 2, 79, 0.877);
+    border-radius: 2em;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: inherit;
+    row-gap: 50px;
+}
+
+
+
+.county:hover {
+    fill: black;
+}
+
+
+
+#tooltip{
+    padding-top: 40px;
+    font-size: 1.5em;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+}

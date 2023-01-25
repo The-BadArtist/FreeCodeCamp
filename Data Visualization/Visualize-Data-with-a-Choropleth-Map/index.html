@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Inspiration from Ganesh H -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Choropleth Map By Javian Huell</title>
+</head>
+<body>
+    <h1 id="title">USA Eduaction Data</h1>
+    <h4 id="description">Percentage of people over 25 with a Bachelor's Degree</h4>
+    <div class="container">
+        <svg id="canvas">
+            
+        </svg>
+        <div class="legendndata">
+            <div id="tooltip"></div>
+            <svg id="legend">
+            
+            <rect x="0" y="7" width="60" height="15" fill="hsl(28, 100%, 50%)"/>
+            <rect x="0" y="0" width="4" height="30" fill="white"/>
+            <text x="0" y="50" fill="white">0%</text>
+            <rect x="60" y="7" width="60" height="15" fill="hsl(28, 75%, 60%)"/>
+            <rect x="58" y="0" width="4" height="30" fill="white"/>
+            <text x="51" y="50" fill="white">15%</text>
+            <rect x="116" y="0" width="4" height="30" fill="white"/>
+            <text x="110" y="50" fill="white">30%</text>
+            <rect x="120" y="7" width="60" height="15" fill="hsl(28, 50%, 75%)"/>
+            <text x="172" y="50" fill="white">45%</text>
+            <rect x="180" y="7" width="60" height="15" fill="hsl(28, 25%, 80%)"/>
+            <rect x="178" y="0" width="4" height="30" fill="white"/>
+            <rect x="240" y="0" width="4" height="30" fill="white"/>
+            <text x="235" y="50" fill="white">50%</text>
+            
+            
+        </svg>
+        </div>
+    </div>
+    <script defer src="./script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
